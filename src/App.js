@@ -42,7 +42,12 @@ function App() {
   //localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos))
   //localStorage.removeItem('TODOS_V1')
 
-  const [todos, saveTodos] = useLocalStorage("TODOS_V1", []);
+  const {
+    item: todos,
+    saveItem: saveTodos,
+    loading,
+    error,
+  } = useLocalStorage("TODOS_V1", []);
   const [searchValue, setSearchValue] = React.useState("");
 
   const totalTodos = todos.length;
@@ -67,6 +72,8 @@ function App() {
 
   return (
     <AppUi
+      loading={loading}
+      error={error}
       totalTodos={totalTodos}
       completedTodos={completedTodos}
       searchValue={searchValue}
