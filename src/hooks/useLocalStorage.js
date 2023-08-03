@@ -24,6 +24,7 @@ function useLocalStorage(itemName, initialValue) {
       } catch (error) {
         setLoading(false);
         setError(true);
+        //console.log(error)
       }
     }, 2000);
   }, []);
