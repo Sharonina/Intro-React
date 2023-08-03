@@ -20,7 +20,11 @@ function AppUi({
 }) {
   return (
     <>
-      <TodoCounter total={totalTodos} completed={completedTodos} />
+      <TodoCounter
+        total={totalTodos}
+        completed={completedTodos}
+        loading={loading}
+      />
       <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       <TodoList>
         {loading && <TodosLoading />}
