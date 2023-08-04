@@ -8,28 +8,11 @@ import { TodosLoading } from "../TodosLoading/TodosLoading";
 import { EmptyTodos } from "../EmptyTodos/EmptyTodos";
 import { TodoContext } from "../../context/TodoContext";
 
-function AppUi(
-  {
-    /* loading,
-  error,
-  totalTodos,
-  completedTodos,
-  searchValue,
-  setSearchValue,
-  todosSearch,
-  completeTodo,
-  deleteTodo, */
-  }
-) {
+function AppUi() {
   return (
     <>
-      <TodoCounter
-      /* total={totalTodos}
-        completed={completedTodos}
-        loading={loading} */
-      />
-      <TodoSearch /* searchValue={searchValue} setSearchValue={setSearchValue} */
-      />
+      <TodoCounter />
+      <TodoSearch />
       <TodoContext.Consumer>
         {({ loading, error, todosSearch, completeTodo, deleteTodo }) => (
           <TodoList>
