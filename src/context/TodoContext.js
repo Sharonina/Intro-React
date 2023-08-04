@@ -4,7 +4,7 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 
 const TodoContext = React.createContext();
 
-function TodoProvider(children) {
+function TodoProvider({ children }) {
   const {
     item: todos,
     saveItem: saveTodos,
