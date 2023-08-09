@@ -12,14 +12,18 @@
 .createTodo-container button {
   width: 100%;
   height: 4.4rem;
-  font-size: 2.5em;
   border: none;
   background-color: #7996f5;
   cursor: pointer;
-  color: aliceblue;
-  /*   background: url("./assets/circle-check.svg") no-repeat;
-  background-size: 90%;
-  background-position: center center; */
+}
+
+.createTodo-container button img {
+  transition: transform 1s;
+  height: 40%;
+}
+
+.createTodo-container button:hover img {
+  transform: rotate(360deg);
 }
 
 .createTodo-container button:hover {
