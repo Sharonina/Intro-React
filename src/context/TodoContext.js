@@ -37,6 +37,7 @@ function TodoProvider({ children }) {
   const createTodo = () => {
     setOpenModal(!openModal);
   };
+
   return (
     <TodoContext.Provider
       value={{

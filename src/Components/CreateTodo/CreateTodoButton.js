@@ -4,10 +4,7 @@ import "./CreateTodoButton.css";
 import { TodoContext } from "../../context/TodoContext";
 
 function CreateTodoButton() {
-  const { openModal, setOpenModal } = React.useContext(TodoContext);
-  const createTodo = () => {
-    setOpenModal(!openModal);
-  };
+  const { createTodo } = React.useContext(TodoContext);
 
   return (
     <div className="createTodo-container">

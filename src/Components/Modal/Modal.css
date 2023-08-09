@@ -1,6 +1,12 @@
 .Modal {
-  width: 90%;
-  height: 15rem;
-  background: aquamarine;
-  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background: rgba(53, 72, 134, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
