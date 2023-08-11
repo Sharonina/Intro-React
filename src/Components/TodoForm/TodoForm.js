@@ -7,7 +7,7 @@ function TodoForm() {
     <>
       <form>
         <label>Escribe tu nueva tarea</label>
-        <textarea placeholder="Responder mensajes" maxlength="90" />
+        <textarea placeholder="Responder mensajes" maxLength="90" />
         <div className="TodoForm-buttonsContainer">
           <button className="TodoForm-btn-cancel">Cancelar</button>
           <button className="TodoForm-btn-add">Crear</button>
